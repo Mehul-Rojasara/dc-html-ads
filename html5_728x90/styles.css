@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "SeasonMix";
+  src: url("SeasonMix-Medium.woff2") format("woff2");
+  font-weight: 580;
+  font-style: medium;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ad-container {
+  width: 728px;
+  height: 90px;
+  background-color: #002540;
+  overflow: hidden;
+  position: relative;
+  font-family: "SeasonMix", Arial, sans-serif;
+  color: #f2f1ef;
+  border: none;
+  cursor: pointer;
+}
+
+.frame-1,
+.frame-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Frame 1 */
+.frame-1 {
+  justify-content: center;
+  padding: 0 40px;
+  z-index: 1;
+}
+
+.headline {
+  font-size: 24px;
+  line-height: 25.8px;
+  letter-spacing: 0.06px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.headline .line {
+  display: block;
+}
+
+.headline span {
+  display: inline-block;
+}
+
+/* Frame 2 (End Card) */
+.frame-2 {
+  justify-content: center;
+  opacity: 0;
+  z-index: 2;
+}
+
+.center-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.center-lockup img {
+  width: 120px;
+  height: auto;
+}
+
+.center-lockup .tagline {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.mask span {
+  display: inline-block;
+}

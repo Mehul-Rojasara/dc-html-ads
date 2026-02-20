@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Brookfield - 728x90</title>
+  <meta name="ad.size" content="width=728,height=90" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    var clickTag =
+      "https://support.google.com/displayvideo/answer/10261241?hl=en";
+  </script>
+</head>
+
+<body>
+  <button id="ad-container" onclick="window.open(window.clickTag)">
+    <!-- Frame 1 -->
+    <div class="frame-1">
+      <div class="headline">
+        <div class="line">
+          <span class="mask"><span class="phrase-1">Own the thing behind the thing,</span></span>
+          <span class="mask"><span class="phrase-2">behind the next big thing.</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frame 2 -->
+    <div class="frame-2">
+      <div class="center-lockup">
+        <img src="brookfield-logo.svg" alt="Brookfield" class="logo" />
+        <div class="tagline">
+          <span class="word">Own</span>
+          <span class="word">what’s</span>
+          <span class="word">next</span>
+        </div>
+      </div>
+    </div>
+  </button>
+  <script src="gsap.min.js"></script>
+  <script>
+    var tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+    // Frame 1 Animation
+    tl.from(".headline .phrase-1", { duration: 0.8, x: "-100%", delay: 0.3 })
+      .from(".headline .phrase-2", { duration: 0.8, x: "-100%" }, "-=0.6");
+
+    // Transition to Frame 2 (End Card)
+    tl.to(".frame-1", { duration: 0.5, opacity: 0, delay: 2.2 })
+      .to(".frame-2", { duration: 0.5, opacity: 1 }, "-=0.5")
+      .from(".frame-2 .logo", { duration: 0.7, opacity: 0 }, "-=0.3")
+      .from(".frame-2 .tagline .word", { duration: 0.7, opacity: 0, stagger: 0.12 }, "-=0.5");
+  </script>
+</body>
+
+</html>

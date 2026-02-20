@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "SeasonMix";
+  src: url("SeasonMix-Medium.woff2") format("woff2");
+  font-weight: 580;
+  font-style: medium;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SeasonMix", Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#ad-container {
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: #efeee9;
+}
+
+/* Common Frame Layout */
+.frame-1,
+.frame-2,
+.frame-3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 12px;
+}
+
+/* Frame 1 Layout */
+.frame-1 {
+  z-index: 10;
+}
+.frame-1 .image-container {
+  overflow: hidden;
+  flex: 0 0 151px;
+}
+.frame-1 .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frame-1 .content-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  padding: 12px 5px 12px 12px;
+  width: 100%;
+}
+
+.headline {
+  font-family: "SeasonMix", Arial, sans-serif;
+  letter-spacing: 0.06px;
+  font-size: 19.04px;
+  line-height: 22.85px;
+  vertical-align: middle;
+  color: #002540;
+}
+
+.headline .line {
+  display: block;
+  overflow: hidden;
+}
+
+.headline span {
+  display: inline-block;
+}
+
+.logo-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.small-lockup img {
+  width: 70px;
+  height: auto;
+}
+.logo-lockup img {
+  width: 96px;
+  height: auto;
+}
+
+.tagline {
+  font-family: "SeasonMix", Arial, sans-serif;
+  font-weight: 400;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  color: #002540;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.tagline .word {
+  display: inline-block;
+}
+
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.mask span {
+  display: inline-block;
+}
+
+/* Frame 2 & 3 Wrap */
+.blue-persistent-block {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background-color: #002540;
+  opacity: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.blue-persistent-block .frame-2,
+.blue-persistent-block .frame-3 {
+  padding: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Frame 2 (Capabilities) */
+.frame-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.capabilities-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "SeasonMix", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  gap: 8px;
+}
+
+.cap-word {
+  display: block;
+}
+
+/* Frame 3 Layout (End Card) */
+.frame-3 {
+  z-index: 2;
+}
+.center-lockup {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.center-lockup .logo {
+  width: 104px;
+  height: auto;
+}
+.center-lockup .tagline {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 22px;
+  letter-spacing: normal;
+  transform: translateY(4px);
+}

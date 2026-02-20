@@ -82,7 +82,7 @@
       .from(".headline .phrase-3", { duration: 1.2, x: "-100%" }, "-=0.8")
       .from(".headline .phrase-4", { duration: 1.2, x: "-100%" }, "-=0.8")
       .from(".small-lockup .logo", { duration: 0.8, opacity: 0 }, "-=0.2")
-      .from(".small-lockup .tagline .word", { duration: 1, opacity: 0, stagger: 0.3 }, "-=0.12");
+      .from(".small-lockup .tagline .word", { duration: 1, opacity: 0, stagger: 0.4 }, "-=0.12");
 
     // Transition to Frame 2 (Capabilities) via Persistent Block
     tl.to(".frame-1", { duration: 1, opacity: 0, delay: 1 })
@@ -104,9 +104,9 @@
 
     // Transition to Frame 3 (Endframe) - No background fade
     tl.to(".frame-2", { duration: 0.6, opacity: 0, delay: 1 })
-      .to(".frame-3", { duration: 0.6, opacity: 1 }, "-=0.4")
-      .from(".frame-3 .logo", { duration: 1, opacity: 0 }, "-=0.5")
-      .from(".frame-3 .tagline .word", { duration: 1, opacity: 0, stagger: 0.3 }, "-=0.12");
+      .to(".frame-3", { duration: 0.6, opacity: 1 }, "-=0.8")
+      .from(".frame-3 .logo", { duration: 1, opacity: 0 }, "-=0.3")
+      .from(".frame-3 .tagline .word", { duration: 1, opacity: 0, stagger: 0.4 }, "-=0.12");
   </script>
 </body>
 

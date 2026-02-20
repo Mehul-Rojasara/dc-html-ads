@@ -78,14 +78,14 @@ body {
 }
 
 .center-lockup img {
-  width: 120px;
+  width: 103px;
   height: auto;
 }
 
 .center-lockup .tagline {
-  font-size: 21px;
-  letter-spacing: 0.5px;
+  font-size: 18px;
   line-height: 1;
+  transform: translateY(2px);
 }
 
 .mask {

@@ -18,9 +18,7 @@
     <div class="frame-1">
       <div class="headline">
         <div class="line">
-          <span class="mask"><span class="phrase-1">Own the thing</span></span>
-          <span class="mask"><span class="phrase-2">behind the thing,</span></span>
-          <span class="mask"><span class="phrase-3">behind the next big thing.</span></span>
+          <span class="mask"><span class="phrase-1">Own the backbone of the global economy.</span></span>
         </div>
       </div>
     </div>
@@ -42,9 +40,7 @@
     var tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
     // Frame 1 Animation
-    tl.from(".headline .phrase-1", { duration: 0.8, x: "-100%", delay: 0.1 });
-    tl.from(".headline .phrase-2", { duration: 0.8, x: "-100%", delay: 0.1 }, "-=0.5");
-    tl.from(".headline .phrase-3", { duration: 0.8, x: "-100%", delay: 0.1 }, "-=0.5");
+    tl.from(".headline .phrase-1", { duration: 1.5, x: "-100%", delay: 0.3 });
 
     // Transition to Frame 2 (End Card)
     tl.to(".frame-1", { duration: 0.8, opacity: 0, delay: 2.2 })

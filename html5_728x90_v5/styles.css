@@ -86,12 +86,14 @@ body {
   font-size: 18px;
   line-height: 1;
   transform: translateY(2px);
+  letter-spacing: 1.5%;
 }
 
 .mask {
   display: inline-block;
   overflow: hidden;
   vertical-align: middle;
+  letter-spacing: 1.5%;
 }
 
 .mask span {

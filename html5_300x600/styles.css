@@ -96,8 +96,8 @@ body {
   gap: 4px;
 }
 
-.small-lockup img {
-  width: auto;
+.small-lockup svg {
+  max-width: 116px;
   height: auto;
 }
 
@@ -115,6 +115,10 @@ body {
 
 .tagline .word {
   display: inline-block;
+}
+
+.small-lockup .tagline .word path {
+  fill: #002540;
 }
 
 .mask {
@@ -188,14 +192,11 @@ body {
   gap: 8px;
 }
 
-.center-lockup .logo {
-  width: auto;
+.center-lockup svg {
+  max-width: 177.77px;
   height: auto;
 }
 
-.center-lockup .tagline {
-  color: #fff;
-  font-size: 24.04px;
-  transform: translateY(3px);
-  letter-spacing: 0.24px;
+.center-lockup svg * {
+  fill: #fff;
 }

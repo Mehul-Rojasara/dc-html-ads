@@ -97,8 +97,8 @@ body {
   gap: 4px;
 }
 
-.small-lockup img {
-  width: auto;
+.small-lockup svg {
+  max-width: 154px;
   height: auto;
 }
 
@@ -188,15 +188,11 @@ body {
   gap: 8px;
 }
 
-.center-lockup .logo {
-  width: auto;
+.center-lockup svg {
+  max-width: 263.59px;
   height: auto;
 }
 
-.center-lockup .tagline {
-  color: #fff;
-  font-size: 35.65px;
-  margin-top: 10px;
-  transform: translateY(6px);
-  letter-spacing: 0.36px;
+.center-lockup svg * {
+  fill: #fff;
 }

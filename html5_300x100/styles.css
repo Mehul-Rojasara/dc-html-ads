@@ -13,8 +13,12 @@
 body {
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #ad-container {
@@ -27,6 +31,7 @@ body {
   color: #f2f1ef;
   border: none;
   cursor: pointer;
+  border: 1px solid #000;
 }
 
 .frame-1 {
@@ -54,13 +59,13 @@ body {
 }
 
 .center-lockup img {
-  width: 103px;
+  width: auto;
   height: auto;
 }
 
 .center-lockup .tagline {
   font-size: 18px;
   line-height: 1;
-  transform: translateY(2px);
-  letter-spacing: 1.5%;
+  transform: translate(1px, 2px);
+  letter-spacing: 0.18px;
 }

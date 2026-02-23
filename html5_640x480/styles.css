@@ -14,8 +14,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "SeasonMix", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #ad-container {
@@ -28,6 +32,7 @@ body {
   padding: 0;
   margin: 0;
   border: none;
+  /* border: 1px solid #000; */
 }
 
 .text-light {
@@ -60,7 +65,7 @@ body {
 }
 
 .content-container {
-  padding: 70px 10px 16px 36px;
+  padding: 58px 10px 16px 36px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,7 +99,7 @@ body {
 }
 
 .small-lockup img {
-  width: 119px;
+  width: auto;
   height: auto;
 }
 
@@ -102,10 +107,10 @@ body {
   font-family: "SeasonMix", Arial, sans-serif;
   font-weight: 400;
   vertical-align: middle;
-  letter-spacing: 1.5%;
-  font-size: 21px;
+  letter-spacing: 0.21px;
+  font-size: 20.79px;
   line-height: 1;
-  margin-top: 8px;
+  margin-top: 11px;
 }
 
 .tagline .word {
@@ -185,13 +190,14 @@ body {
 }
 
 .center-lockup .logo {
-  width: 205px;
+  width: auto;
   height: auto;
 }
 
 .center-lockup .tagline {
   color: #fff;
-  font-size: 35px;
+  font-size: 35.65px;
   margin-top: 10px;
-  transform: translateY(5px);
+  transform: translateY(6px);
+  letter-spacing: 0.36px;
 }

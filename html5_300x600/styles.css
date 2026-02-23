@@ -15,8 +15,12 @@ body {
   padding: 0;
   font-family: "SeasonMix", Arial, sans-serif;
   font-weight: 400;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 #ad-container {
@@ -28,6 +32,7 @@ body {
   padding: 0;
   border: none;
   background-color: #efeee9;
+  /* border: 1px solid #000; */
 }
 
 /* Frame 1 Layout */
@@ -93,19 +98,20 @@ body {
 }
 
 .small-lockup img {
-  width: 90px;
+  width: auto;
   height: auto;
 }
 
 .tagline {
   font-family: "SeasonMix", Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: 1.5%;
+  letter-spacing: 0.15px;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 15.66px;
   color: #002540;
   line-height: 1;
-  margin-top: 5px;
+  margin-top: 7px;
+  transform: translateY(1px);
 }
 
 .tagline .word {
@@ -184,12 +190,13 @@ body {
 }
 
 .center-lockup .logo {
-  width: 138px;
+  width: auto;
   height: auto;
 }
 
 .center-lockup .tagline {
   color: #fff;
-  font-size: 24px;
-  margin-top: 6px;
+  font-size: 24.04px;
+  transform: translateY(3px);
+  letter-spacing: 0.24px;
 }

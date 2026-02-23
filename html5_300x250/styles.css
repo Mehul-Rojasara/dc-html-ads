@@ -100,6 +100,10 @@ body {
   width: auto;
   height: auto;
 }
+.small-lockup svg {
+  max-width: 88px;
+  height: auto;
+}
 .logo-lockup img {
   width: 96px;
   height: auto;
@@ -190,6 +194,13 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 4px;
+}
+.center-lockup svg {
+  max-width: 143.63px;
+  height: auto;
+}
+.center-lockup svg * {
+  fill: #fff;
 }
 .center-lockup .logo {
   width: auto;

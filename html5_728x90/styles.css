@@ -29,8 +29,8 @@ body {
   position: relative;
   font-family: "SeasonMix", Arial, sans-serif;
   color: #f2f1ef;
-  border: none;
   cursor: pointer;
+  border: 1px solid #000;
 }
 
 .frame-1,

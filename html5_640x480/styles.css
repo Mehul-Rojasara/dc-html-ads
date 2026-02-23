@@ -31,8 +31,7 @@ body {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  border: none;
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
 }
 
 .text-light {
